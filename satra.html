@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/ic2.png" type="image/png">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .home__data {
+            margin-top: 0;
+        }
+        .home__content {
+            background-color: white;
+            opacity: 1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-height: calc(100vh - 120px); /* Subtract the height of the header and some margin */
+            overflow-y: auto; /* Allow vertical scroll */
+        }
+        .home__content p {
+            margin: 10px 0;
+        }
+        .home__content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .home__img {
+            width: 100%;
+            height: auto;
+            max-height: 120vh; /* Prevent the image from being stretched */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+        header.header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background: transparent;
+            transition: background 0.3s;
+        }
+        header.header.scroll-header {
+            background: black;
+        }
+        main.main {
+            padding-top: 70px; /* Ensure enough padding to avoid overlap with fixed header */
+        }
+        section.home {
+            padding-top: 30px; /* Ensure section starts below the header */
+        }
+        .footer {
+            background-color: #111; /* Set background color */
+            color: #fff; /* Set text color */
+            padding: 20px 0;
+        }
+        .footer__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .footer__data {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer__title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .footer__description {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .footer__social {
+            margin-right: 10px;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        .footer__subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .footer__item {
+            margin-bottom: 5px;
+        }
+        .footer__link {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer__rights {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer__copy {
+            font-size: 1rem;
+        }
+        .footer__terms {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .footer__terms-link {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+    <title>Responsive Website Travel</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Travel</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#satras" class="nav__link">Satras</a>
+                    </li>
+                    
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <img src="assets/img/11.jpg" alt="Majuli Island" class="home__img">
+            
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <div class="home__content">
+                        <h2>Satras</h2>
+                        gffgfkfg
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Travel</h3>
+                    <p class="footer__description">Travel you choose the <br> destination, 
+                        we offer you the <br> experience.
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">About</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Features</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">New & Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Team</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Plan y Pricing</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Become a member</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Support Center</                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2021 Bedimcode. All rights reserved.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer__terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
